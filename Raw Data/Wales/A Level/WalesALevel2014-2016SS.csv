@@ -1,0 +1,167 @@
+EUCLID DfE Number,EUCLID School Code,match on school code,school code same in both sheets,EUCLID National Centre Number,School Name,School type,Average wider points score for pupils aged 17 2014,Z score 2014,Average wider points score for pupils aged 17 2015,Z score 2015,Average wider points score for pupils aged 17 2016,Z Score 2016,Average Z score 2014-2016,Above or Below Average,Notes,Change check 2014-15,Change check 2015-16,Upload check,Upload double check
+6604025,10001,10001,TRUE,68401,Ysgol Syr Thomas Jones,Comprehensive School,951.6,0.8,803.1,-0.13,880.29,0.28,0.31,Above Average,,OK,OK,Above Average,TRUE
+6604026,10003,10003,TRUE,68447,Ysgol Uwchradd Caergybi,Comprehensive School,739.3,-0.58,665,-1.06,701.39,-1.02,-0.88,Below Average,,OK,OK,Below Average,TRUE
+6604027,10006,10006,TRUE,68463,Ysgol Gyfun Llangefni,Comprehensive School,950.3,0.79,956.2,0.89,829.04,-0.09,0.53,Above Average,,OK,OK,Above Average,TRUE
+6604028,10002,10002,TRUE,68474,Ysgol David Hughes,Comprehensive School,921.2,0.6,873,0.33,967.38,0.91,0.61,Above Average,,OK,OK,Above Average,TRUE
+6604029,15959,15959,TRUE,68424,Ysgol Uwchradd Bodedern,Comprehensive School,945.7,0.76,964.6,0.95,881.16,0.28,0.66,Above Average,,OK,OK,Above Average,TRUE
+6614002,10153,10153,TRUE,68418,Ysgol Dyffryn Ogwen,Comprehensive School,937.7,0.71,986.1,1.09,891,0.35,0.72,Above Average,,OK,OK,Above Average,TRUE
+6614004,10161,10161,TRUE,68467,Ysgol Brynrefail,Comprehensive School,997.1,1.1,1044.8,1.48,981.93,1.01,1.2,Above Average,,OK,OK,Above Average,TRUE
+6614007,10162,10162,TRUE,68478,Ysgol Dyffryn Nantlle,Comprehensive School,1057.7,1.49,1008.9,1.24,1041.82,1.44,1.39,Above Average,,OK,OK,Above Average,TRUE
+6614033,12184,12184,TRUE,68404,Ysgol Y Berwyn,Comprehensive School,1124.8,1.93,1162.7,2.27,969.41,0.92,1.71,Above Average,,OK,Big Change,Above Average,TRUE
+6614036,15223,15223,TRUE,68407,Ysgol Friars,Comprehensive School,821.1,-0.05,764.2,-0.4,773.42,-0.5,-0.31,Below Average,,OK,OK,Below Average,TRUE
+6614037,15936,15936,TRUE,68410,Ysgol Tryfan,Comprehensive School,855,0.17,963.8,0.94,1021.94,1.3,0.81,Above Average,,OK,OK,Above Average,TRUE
+6614039,10156,10156,TRUE,68431,Ysgol Syr Hugh Owen,Comprehensive School,861.5,0.22,862.5,0.26,811.04,-0.22,0.09,Above Average,,OK,OK,Above Average,TRUE
+6616008,10155,10155,TRUE,68409,St Gerards School Trust,Independent School,839.8,0.08,735,-0.59,771.68,-0.51,-0.34,Below Average,"No data for 2016, website says is studies A Levels",OK,OK,Below Average,TRUE
+6624022,10158,10158,TRUE,68452,Ysgol John Bright,Comprehensive School,999.4,1.11,971.9,1,1000.73,1.15,1.09,Above Average,,OK,OK,Above Average,TRUE
+6624023,14757,14757,TRUE,68434,Ysgol Aberconwy,Comprehensive School,750.1,-0.51,723.1,-0.67,752.61,-0.65,-0.61,Below Average,,OK,OK,Below Average,TRUE
+6624035,10371,10371,TRUE,68470,Ysgol Dyffryn Conwy,Comprehensive School,653.8,-1.13,849.1,0.17,895.39,0.39,-0.19,Below Average,,Big Change,OK,Below Average,TRUE
+6624038,11218,11218,TRUE,68450,Ysgol Y Creuddyn,Comprehensive School,1002.3,1.13,981.7,1.06,971.09,0.93,1.04,Above Average,,OK,OK,Above Average,TRUE
+6625400,10361,10361,TRUE,68101,Ysgol Emrys Ap Iwan,Comprehensive School,763.4,-0.42,797.5,-0.17,853.69,0.08,-0.17,Below Average,,OK,OK,Below Average,TRUE
+6625402,10362,10362,TRUE,68106,Eirias High School,Comprehensive School,848.8,0.13,835.4,0.08,912.57,0.51,0.24,Above Average,,OK,OK,Above Average,TRUE
+6625403,15568,15568,TRUE,68105,Ysgol Bryn Elian,Comprehensive School,981.7,1,893.5,0.47,882.29,0.29,0.59,Above Average,,OK,OK,Above Average,TRUE
+6634014,10750,10750,TRUE,68148,Prestatyn High School,Comprehensive School,620.3,-1.35,549.5,-1.83,582.24,-1.88,-1.69,Below Average,,OK,OK,Below Average,TRUE
+6634020,10753,10753,TRUE,68171,Ysgol Uwchradd Glan Clwyd,Comprehensive School,937.7,0.71,925.1,0.68,878.45,0.26,0.55,Above Average,,OK,OK,Above Average,TRUE
+6634026,10367,10367,TRUE,68116,Denbigh High School,Comprehensive School,617.7,-1.37,613.6,-1.4,638.41,-1.47,-1.42,Below Average,,OK,OK,Below Average,TRUE
+6634027,10370,10370,TRUE,68138,Ysgol Dinas Bran,Comprehensive School,551.7,-1.8,604.5,-1.46,643.34,-1.44,-1.57,Below Average,,OK,OK,Below Average,TRUE
+6634031,10373,10373,TRUE,68165,Ysgol Brynhyfryd,Comprehensive School,890.5,0.4,884.1,0.41,963.07,0.88,0.56,Above Average,,OK,OK,Above Average,TRUE
+6635901,10664,10664,TRUE,68115,St Brigid's School,Comprehensive School,668.1,-1.04,725.6,-0.65,720.24,-0.88,-0.86,Below Average,,OK,OK,Below Average,TRUE
+6644000,15562,15562,TRUE,68127,Hawarden High School,Comprehensive School,857.9,0.19,818.9,-0.03,768.41,-0.53,-0.12,Below Average,,OK,OK,Below Average,TRUE
+6644006,10748,10748,TRUE,68140,Alun School,Comprehensive School,692.4,-0.88,715.8,-0.72,718.13,-0.9,-0.83,Below Average,,OK,OK,Below Average,TRUE
+6644011,15271,15271,TRUE,68103,Elfed High School,Comprehensive School,606.2,-1.44,640.8,-1.22,No Data,No Data,-1.33,Below Average,"No data for 2016, website says is studies A Levels",OK,No Data,Below Average,TRUE
+6644012,10745,10745,TRUE,68129,Holywell High School,Comprehensive School,593.1,-1.53,489.3,-2.24,673.52,-1.22,-1.66,Below Average,,OK,Big Change,Below Average,TRUE
+6644017,14538,14538,TRUE,68135,Castell Alun High School,Comprehensive School,925.1,0.63,853.5,0.2,906.36,0.47,0.43,Above Average,,OK,OK,Above Average,TRUE
+6644018,10749,10749,TRUE,68143,Ysgol Maes Garmon,Comprehensive School,945,0.76,865.4,0.28,848,0.04,0.36,Above Average,,OK,OK,Above Average,TRUE
+6644600,10744,10744,TRUE,68123,St Richard Gwyn Catholic High School,Comprehensive School,878.5,0.33,901.2,0.52,845.83,0.03,0.29,Above Average,,OK,OK,Above Average,TRUE
+6644999,19302,#N/A,#N/A,Not Known,The Deeside Consortium,Comprehensive School,655.5,-1.12,723.4,-0.67,759.45,-0.6,-0.8,Below Average,,OK,OK,#N/A,#N/A
+6654032,10382,10382,TRUE,68184,Ysgol Morgan Llwyd,Comprehensive School,859,0.2,782.5,-0.27,890.13,0.35,0.09,Above Average,,OK,OK,Above Average,TRUE
+6654044,10372,10372,TRUE,68163,Ysgol Rhiwabon,Comprehensive School,617.1,-1.37,794.1,-0.2,747.38,-0.68,-0.75,Below Average,,Big Change,OK,Below Average,TRUE
+6655401,10380,10380,TRUE,68146,The Maelor School,Comprehensive School,981.2,1,894.3,0.48,923.52,0.59,0.69,Above Average,,OK,OK,Above Average,TRUE
+6664000,12329,12329,TRUE,68640,Caereinion High School,Comprehensive School,947.6,0.78,974.2,1.01,911.48,0.5,0.76,Above Average,,OK,OK,Above Average,TRUE
+6664001,12323,12323,TRUE,68643,Llanfyllin High School,Comprehensive School,998.6,1.11,738.2,-0.57,724,-0.85,-0.1,Below Average,,Big Change,OK,Below Average,TRUE
+6664002,12324,12324,TRUE,68646,Llanidloes High School,Comprehensive School,813.8,-0.09,890.6,0.45,708.34,-0.97,-0.2,Below Average,,OK,Big Change,Below Average,TRUE
+6664011,12327,12327,TRUE,68656,Newtown High School,Comprehensive School,1031,1.32,1050.2,1.52,960.22,0.85,1.23,Above Average,,OK,OK,Above Average,TRUE
+6664013,12330,12330,TRUE,68677,Welshpool High School,Comprehensive School,718.3,-0.71,735,-0.59,719.54,-0.89,-0.73,Below Average,,OK,OK,Below Average,TRUE
+6664019,12555,12555,TRUE,68635,Llandrindod High School,Comprehensive School,927.3,0.64,962.8,0.93,914.17,0.52,0.7,Above Average,,OK,OK,Above Average,TRUE
+6664020,10106,10106,TRUE,68615,Builth Wells High School,Comprehensive School,953.4,0.81,832.3,0.06,890.78,0.35,0.41,Above Average,,OK,OK,Above Average,TRUE
+6664021,10848,10848,TRUE,68685,Ysgol Maes-y-Dderwen,Comprehensive School,1000.3,1.12,1018.5,1.31,841.57,0,0.81,Above Average,,OK,Big Change,Above Average,TRUE
+6664022,15056,15056,TRUE,68607,Brecon High School,Comprehensive School,997.8,1.1,984.5,1.08,914.18,0.52,0.9,Above Average,,OK,OK,Above Average,TRUE
+6664023,15764,15764,TRUE,68667,Gwernyfed High School,Comprehensive School,921.1,0.6,996,1.16,998.62,1.13,0.96,Above Average,,OK,OK,Above Average,TRUE
+6664024,11415,11415,TRUE,68618,Crickhowell High School,Comprehensive School,968.8,0.91,989.4,1.11,876.38,0.25,0.76,Above Average,,OK,OK,Above Average,TRUE
+6666000,10102,10102,TRUE,68605,Christ College,Independent School,DC,DC,897.8,0.5,911.38,0.5,0.5,Above Average,"Independent school , not in 2016 data, does do A Levels",No Data,OK,Above Average,TRUE
+6674042,10187,10187,TRUE,Not Known,Ysgol Gyfun Aberaeron,Comprehensive School,884.9,0.37,863.7,0.27,731.8,-0.8,-0.05,Below Average,,OK,Big Change,Below Average,TRUE
+6674044,15201,15201,TRUE,68217,Ysgol Uwchradd Aberteifi,Comprehensive School,903.9,0.49,944.6,0.81,1078.29,1.71,1,Above Average,,OK,OK,Above Average,TRUE
+6674047,10189,10189,TRUE,68204,Penglais Comprehensive School / Ysgol Penglais,Comprehensive School,878.4,0.33,975.9,1.02,921.75,0.58,0.64,Above Average,,OK,OK,Above Average,TRUE
+6674048,15415,15415,TRUE,68205,Ysgol Gyfun Penweddig,Comprehensive School,1019.2,1.24,888.4,0.44,934.46,0.67,0.78,Above Average,,OK,OK,Above Average,TRUE
+6674059,11771,11771,TRUE,68251,Ysgol Gyfun Dyffryn Teifi,Comprehensive School,1062,1.52,862.1,0.26,895.39,0.39,0.72,Above Average,,Big Change,OK,Above Average,TRUE
+6675500,10190,10190,TRUE,68244,Ysgol Bro Pedr,Comprehensive School,656.8,-1.11,910,0.58,910.91,0.5,-0.01,Below Average,,Big Change,OK,Below Average,TRUE
+6684031,12549,12549,TRUE,68237,Ysgol Bro Gwaun,Comprehensive School,903.6,0.49,801.5,-0.15,977,0.98,0.44,Above Average,,OK,Big Change,Above Average,TRUE
+6684034,12553,12553,TRUE,68285,Ysgol Dewi Sant,Comprehensive School,DC,DC,920.3,0.65,868.08,0.19,0.42,Above Average,,No Data,OK,Above Average,TRUE
+6684035,12554,12554,TRUE,68287,The Greenhill School,Comprehensive School,914.8,0.56,946.3,0.82,940.47,0.71,0.7,Above Average,,OK,OK,Above Average,TRUE
+6684038,12547,12547,TRUE,68276,Pembroke School,Comprehensive School,839.3,0.07,910.9,0.59,889.23,0.34,0.33,Above Average,,OK,OK,Above Average,TRUE
+6684055,15697,15697,TRUE,68240,Sir Thomas Picton School,Comprehensive School,977.9,0.97,908.8,0.57,1014.78,1.25,0.93,Above Average,,OK,OK,Above Average,TRUE
+6684063,12552,12552,TRUE,68265,Milford Haven School,Comprehensive School,782.9,-0.29,666.2,-1.05,807.51,-0.25,-0.53,Below Average,,OK,OK,Below Average,TRUE
+6684064,12548,12548,TRUE,68231,Ysgol y Preseli,Comprehensive School,940.1,0.73,978.9,1.04,1053.8,1.53,1.1,Above Average,,OK,OK,Above Average,TRUE
+6684511,12551,12551,TRUE,68241,Tasker-Milward V.C. School,Comprehensive School,904,0.49,886.6,0.42,837.48,-0.03,0.29,Above Average,,OK,OK,Above Average,TRUE
+6694029,15058,15058,TRUE,68209,Amman Valley School,Comprehensive School,801.9,-0.17,770.2,-0.35,805.44,-0.26,-0.26,Below Average,,OK,OK,Below Average,TRUE
+6694052,15557,15557,TRUE,68259,Ysgol Gyfun Y Strade,Comprehensive School,852.5,0.16,872.2,0.33,950.28,0.78,0.42,Above Average,,OK,OK,Above Average,TRUE
+6694056,10043,10043,TRUE,68220,Ysgol Gyfun Gymraeg Bro Myrddin,Comprehensive School,910.3,0.53,956.1,0.89,820.15,-0.16,0.42,Above Average,,OK,Big Change,Above Average,TRUE
+6694060,11868,11868,TRUE,68274,Ysgol Gyfun Emlyn,Comprehensive School,898.4,0.46,821.2,-0.01,1034.33,1.39,0.61,Above Average,,OK,Big Change,Above Average,TRUE
+6694063,10199,10199,TRUE,68221,Queen Elizabeth High School,Comprehensive School,710.6,-0.76,832.5,0.06,905.34,0.46,-0.08,Below Average,,OK,OK,Below Average,TRUE
+6694065,19085,19085,TRUE,68246,Ysgol Bro Dinefwr,Comprehensive School,927.3,0.64,844.9,0.14,829.75,-0.09,0.23,Above Average,New school,OK,OK,Above Average,TRUE
+6694512,10210,10210,TRUE,68291,Ysgol Gyfun Dyffryn Taf / Dyffryn Taf School,Comprehensive School,974.4,0.95,1010.3,1.25,1057.43,1.56,1.25,Above Average,,OK,OK,Above Average,TRUE
+6696003,10209,10209,TRUE,68258,St Michael's School,Independent School,DC,DC,933.3,0.74,871.95,0.22,0.48,Above Average,Does do A Levels,No Data,OK,Above Average,TRUE
+6704032,10842,10842,TRUE,68870,Olchfa School,Comprehensive School,793.4,-0.23,745,-0.52,758.66,-0.6,-0.45,Below Average,,OK,OK,Below Average,TRUE
+6704033,14612,14612,TRUE,68868,Morriston Comprehensive School,Comprehensive School,499.6,-2.14,504.8,-2.13,568.65,-1.98,-2.08,Below Average,,OK,OK,Below Average,TRUE
+6704044,10830,10830,TRUE,68855,Bishop Gore School,Comprehensive School,490.5,-2.2,538.4,-1.91,613.07,-1.66,-1.92,Below Average,,OK,OK,Below Average,TRUE
+6704063,10837,10837,TRUE,68818,Gowerton School,Comprehensive School,686.9,-0.92,831.9,0.06,826.4,-0.11,-0.32,Below Average,,OK,OK,Below Average,TRUE
+6704074,16914,16914,TRUE,68877,Ysgol Gyfun Gwyr,Comprehensive School,872,0.28,870.9,0.32,949.62,0.78,0.46,Above Average,,OK,OK,Above Average,TRUE
+6704078,17451,17451,TRUE,Not Known,Ysgol Gyfun Bryn Tawe,Comprehensive School,748,-0.52,882.3,0.4,740.94,-0.73,-0.29,Below Average,,OK,Big Change,Below Average,TRUE
+6704600,10831,10831,TRUE,68857,Bishop Vaughan R.C. School,Comprehensive School,659.8,-1.1,712,-0.74,620.16,-1.6,-1.15,Below Average,,OK,OK,Below Average,TRUE
+6714060,14428,14428,TRUE,68885,Ysgol Gyfun Ystalyfera,Comprehensive School,893.3,0.42,899.2,0.51,945.92,0.75,0.56,Above Average,,OK,OK,Above Average,TRUE
+6714601,10819,10819,TRUE,68848,St Joseph's RC School and 6th Form Centre,Comprehensive School,896.6,0.44,724.7,-0.66,639.9,-1.46,-0.56,Below Average,,Big Change,OK,Below Average,TRUE
+6724059,10766,10766,TRUE,68538,Cynffig Comprehensive School,Comprehensive School,739,-0.58,757.1,-0.44,900.09,0.42,-0.2,Below Average,,OK,OK,Below Average,TRUE
+6724068,15060,15060,TRUE,68521,Bryntirion Comprehensive School,Comprehensive School,958.3,0.85,1010,1.25,960.91,0.86,0.99,Above Average,,OK,OK,Above Average,TRUE
+6724071,10767,10767,TRUE,68545,Maesteg School,Comprehensive School,914.4,0.56,910.4,0.58,996.38,1.12,0.75,Above Average,,OK,OK,Above Average,TRUE
+6724076,15505,15505,TRUE,68558,Pencoed Comprehensive School,Comprehensive School,898.9,0.46,827.1,0.03,792.55,-0.36,0.04,Above Average,,OK,OK,Above Average,TRUE
+6724078,15240,15240,TRUE,68520,Brynteg School,Comprehensive School,755.7,-0.47,679.2,-0.96,716.36,-0.91,-0.78,Below Average,,OK,OK,Below Average,TRUE
+6724080,14773,14773,TRUE,68576,Porthcawl Comprehensive School,Comprehensive School,743.6,-0.55,754.4,-0.46,771.15,-0.51,-0.51,Below Average,,OK,OK,Below Average,TRUE
+6724086,17834,17834,TRUE,68582,Coleg Cymunedol Y Dderwen,Comprehensive School,840,0.08,722.9,-0.67,901.75,0.43,-0.05,Below Average,,OK,Big Change,Below Average,TRUE
+6724601,10762,10762,TRUE,68581,Archbishop Mcgrath Catholic School,Comprehensive School,DC,DC,850.5,0.18,934.24,0.67,0.42,Above Average,,No Data,OK,Above Average,TRUE
+6734060,14469,14469,TRUE,68775,Llantwit Major School,Comprehensive School,899.9,0.47,915.5,0.62,906.08,0.46,0.52,Above Average,,OK,OK,Above Average,TRUE
+6734065,10791,10791,TRUE,68765,Cowbridge Comprehensive School,Comprehensive School,1021.6,1.26,925.2,0.68,891.97,0.36,0.77,Above Average,,OK,OK,Above Average,TRUE
+6735500,16553,16553,TRUE,68711,Ysgol Gyfun Bro Morgannwg,Comprehensive School,1035.4,1.35,864.6,0.28,946.96,0.76,0.79,Above Average,,Big Change,OK,Above Average,TRUE
+6734067,10806,10806,TRUE,68783,St Cyres School,Comprehensive School,1011.3,1.19,995.3,1.15,981.09,1.01,1.12,Above Average,,OK,OK,Above Average,TRUE
+6734999,10759,#N/A,#N/A,Not Known,Barry Sixth Form,Comprehensive School,718,-0.72,655.1,-1.13,766.22,-0.55,-0.8,Below Average,,OK,OK,Missing,FALSE
+6735400,10807,10807,TRUE,68784,Stanwell School,Comprehensive School,1111.6,1.84,1150.1,2.19,1061.33,1.59,1.87,Above Average,,OK,OK,Above Average,TRUE
+6744019,14200,14200,TRUE,68516,Bryncelynnog Comprehensive School,Comprehensive School,663.9,-1.07,670.2,-1.02,823.79,-0.13,-0.74,Below Average,,OK,OK,Below Average,TRUE
+6744022,10813,10813,TRUE,68566,Pontypridd High School,Comprehensive School,820.1,-0.05,856.8,0.22,928.38,0.62,0.27,Above Average,,OK,OK,Above Average,TRUE
+6744027,10814,10814,TRUE,68567,Hawthorn High School,Comprehensive School,758.5,-0.45,772.7,-0.34,772.34,-0.5,-0.43,Below Average,,OK,OK,Below Average,TRUE
+6744053,10800,10800,TRUE,68555,Mountain Ash Comprehensive School,Comprehensive School,613.8,-1.39,455.9,-2.46,521.89,-2.31,-2.06,Below Average,,Big Change,OK,Below Average,TRUE
+6744054,10815,10815,TRUE,68569,Ysgol Gyfun Garth Olwg,Comprehensive School,868.9,0.26,842.8,0.13,718.64,-0.89,-0.17,Below Average,,OK,Big Change,Below Average,TRUE
+6744057,10849,10849,TRUE,68584,Tonyrefail Comprehensive School,Comprehensive School,919.8,0.6,883.6,0.4,995.21,1.11,0.7,Above Average,,OK,OK,Above Average,TRUE
+6744081,10828,10828,TRUE,68589,Treorchy Comprehensive School,Comprehensive School,884.1,0.36,933.5,0.74,951.49,0.79,0.63,Above Average,,OK,OK,Above Average,TRUE
+6744083,10825,10825,TRUE,68544,Ferndale Community School,Comprehensive School,670.3,-1.03,618.9,-1.37,599.81,-1.75,-1.38,Below Average,,OK,OK,Below Average,TRUE
+6744087,10821,10821,TRUE,68575,Porth County Community School,Comprehensive School,561.3,-1.74,600.2,-1.49,566.58,-1.99,-1.74,Below Average,,OK,OK,Below Average,TRUE
+6744095,10827,10827,TRUE,68564,Tonypandy Community College,Comprehensive School,726,-0.66,717.8,-0.71,788.62,-0.39,-0.59,Below Average,,OK,OK,Below Average,TRUE
+6744096,15719,15719,TRUE,68573,Y Pant Comprehensive School,Comprehensive School,718.9,-0.71,807.9,-0.1,908.15,0.48,-0.11,Below Average,,OK,OK,Below Average,TRUE
+6744097,10820,10820,TRUE,68535,Ysgol Gyfun Cymer Rhondda,Comprehensive School,657.2,-1.11,797.9,-0.17,898.57,0.41,-0.29,Below Average,,OK,OK,Below Average,TRUE
+6744105,17191,17191,TRUE,68513,Ysgol Gyfun Rhydywaun,Comprehensive School,835,0.04,786.2,-0.25,740.82,-0.73,-0.31,Below Average,,OK,OK,Below Average,TRUE
+6744602,10812,10812,TRUE,68568,Cardinal Newman R.C. Comprehensive,Comprehensive School,804.2,-0.16,832.4,0.06,812.13,-0.22,-0.1,Below Average,,OK,OK,Below Average,TRUE
+6744604,10972,10972,TRUE,68510,St John Baptist C.I.W. High School,Comprehensive School,693.9,-0.87,621.9,-1.35,570.06,-1.97,-1.4,Below Average,,OK,OK,Below Average,TRUE
+6745500,15847,15847,TRUE,68540,Ysgol Llanhari,Comprehensive School,656.6,-1.12,708,-0.77,787.86,-0.39,-0.76,Below Average,,OK,OK,Below Average,TRUE
+6754011,10795,#N/A,#N/A,68547,Afon Taf High School,Comprehensive School,812.7,-0.1,No Data,No Data,No Data,No Data,-0.1,Below Average,No Data for 2016 or 2015. No news on merger or closure,No Data,No Data,#N/A,#N/A
+6754012,10798,#N/A,#N/A,68550,Pen-Y-Dre High School,Comprehensive School,643.4,-1.2,No Data,No Data,No Data,No Data,-1.2,Below Average,No Data for 2016 or 2015. No news on merger or closure,No Data,No Data,#N/A,#N/A
+6754013,10797,10797,TRUE,68549,Cyfarthfa High School,Comprehensive School,853.5,0.16,No Data,No Data,No Data,No Data,0.16,Above Average,No Data for 2016 or 2015. No news on merger or closure,No Data,No Data,Above Average,TRUE
+6754600,10796,10796,TRUE,68548,Bishop Hedley High School,Comprehensive School,896.6,0.44,No Data,No Data,No Data,No Data,0.44,Above Average,No Data no information on merger or closure,No Data,No Data,Above Average,TRUE
+6764065,15494,15494,TRUE,68531,St Cenydd School,Comprehensive School,955.7,0.83,977.8,1.03,981.93,1.01,0.96,Above Average,,OK,OK,Above Average,TRUE
+6764070,10769,10769,TRUE,68533,St Martin's Comprehensive School,Comprehensive School,681.8,-0.95,668.9,-1.03,649.77,-1.39,-1.13,Below Average,,OK,OK,Below Average,TRUE
+6764073,10758,10758,TRUE,68514,Heolddu Comprehensive School,Comprehensive School,794.9,-0.22,768.8,-0.36,816.93,-0.18,-0.25,Below Average,,OK,OK,Below Average,TRUE
+6764075,12317,12317,TRUE,68560,Lewis School Pengam,Comprehensive School,896.2,0.44,827.5,0.03,727.25,-0.83,-0.12,Below Average,,OK,OK,Below Average,TRUE
+6764077,10793,10793,TRUE,68593,Lewis Girls' Comprehensive School,Comprehensive School,893.8,0.43,902.3,0.53,900.93,0.43,0.46,Above Average,,OK,OK,Above Average,TRUE
+6764090,15726,15726,TRUE,68579,Rhymney Comprehensive School,Comprehensive School,704.8,-0.8,587.2,-1.58,560.87,-2.03,-1.47,Below Average,,OK,OK,Below Average,TRUE
+6764093,14841,14841,TRUE,68518,Bedwas High School,Comprehensive School,578.7,-1.62,642.8,-1.21,617.29,-1.63,-1.49,Below Average,,OK,OK,Below Average,TRUE
+6764103,12187,12187,TRUE,68502,Ysgol Gyfun Cwm Rhymni,Comprehensive School,840.7,0.08,822.5,0,877.26,0.25,0.11,Above Average,,OK,OK,Above Average,TRUE
+6765400,16977,16977,TRUE,68337,Cwmcarn High School,Comprehensive School,648.6,-1.17,694.7,-0.86,762.09,-0.58,-0.87,Below Average,,OK,OK,Below Average,TRUE
+6784051,12298,12298,TRUE,68326,Croesyceiliog School,Comprehensive School,1042.1,1.39,946.9,0.83,1001.12,1.15,1.12,Above Average,,OK,OK,Above Average,TRUE
+6784075,16614,16614,TRUE,68355,Ysgol Gyfun Gwynllyw,Comprehensive School,946.6,0.77,981,1.06,977.4,0.98,0.94,Above Average,,OK,OK,Above Average,TRUE
+6784603,12321,12321,TRUE,68376,St Alban's R.C. High School,Comprehensive School,680.1,-0.96,605.1,-1.46,579.28,-1.9,-1.44,Below Average,,OK,OK,Below Average,TRUE
+6794060,14797,14797,TRUE,68348,Monmouth Comprehensive School,Comprehensive School,773,-0.36,778.7,-0.3,910.18,0.49,-0.05,Below Average,,OK,OK,Below Average,TRUE
+6794064,12293,12293,TRUE,68301,King Henry VIII Comprehensive School,Comprehensive School,717.9,-0.72,622.1,-1.35,866.05,0.17,-0.63,Below Average,,OK,Big Change,Below Average,TRUE
+6794065,12296,12296,TRUE,68321,Chepstow Comprehensive School,Comprehensive School,681.6,-0.95,729.8,-0.63,697.46,-1.05,-0.87,Below Average,,OK,OK,Below Average,TRUE
+6794066,14737,14737,TRUE,68317,Caldicot School,Comprehensive School,651.3,-1.15,768.6,-0.37,774.59,-0.49,-0.67,Below Average,,OK,OK,Below Average,TRUE
+6796008,12304,12304,TRUE,68349,Monmouth School,Independent School,796.3,-0.21,802,-0.14,828.79,-0.1,-0.15,Below Average,,OK,OK,Below Average,TRUE
+6796009,12305,12305,TRUE,68350,Haberdashers' Monmouth School For Girls,Independent School,813.4,-0.1,890,0.45,865.62,0.17,0.17,Above Average,,OK,OK,Above Average,TRUE
+6804003,12316,12316,TRUE,68364,St Julian's Comprehensive School,Comprehensive School,701,-0.83,589.6,-1.56,844.18,0.02,-0.79,Below Average,,OK,Big Change,Below Average,TRUE
+6804020,12308,12308,TRUE,68358,Duffryn High School,Comprehensive School,713.5,-0.75,634.7,-1.26,780.14,-0.45,-0.82,Below Average,,OK,OK,Below Average,TRUE
+6804021,18949,18949,TRUE,68359,Llanwern High School,Comprehensive School,336.3,-3.2,494.8,-2.2,484.62,-2.58,-2.66,Below Average,,Big Change,OK,Below Average,TRUE
+6804025,17748,17748,TRUE,68357,Newport High School,Comprehensive School,649.6,-1.16,752.7,-0.47,757.97,-0.61,-0.75,Below Average,,OK,OK,Below Average,TRUE
+6804026,14622,14622,TRUE,68360,Lliswerry High School,Comprehensive School,746.8,-0.53,703.1,-0.8,823.73,-0.13,-0.49,Below Average,,OK,OK,Below Average,TRUE
+6804030,12307,12307,TRUE,68306,Bassaleg School,Comprehensive School,914.5,0.56,930.3,0.72,890.51,0.35,0.54,Above Average,,OK,OK,Above Average,TRUE
+6804059,15425,15425,TRUE,68312,Caerleon Comprehensive School,Comprehensive School,1074.6,1.6,1140.8,2.13,1131.1,2.09,1.94,Above Average,,OK,OK,Above Average,TRUE
+6804602,12313,12313,TRUE,68363,St Joseph's  R.C.High School,Comprehensive School,1012.4,1.2,951.8,0.86,992.11,1.09,1.05,Above Average,,OK,OK,Above Average,TRUE
+6806003,15942,15942,TRUE,68362,Rougemont School,Independent School,882.8,0.36,779.1,-0.3,758.58,-0.6,-0.18,Below Average,,OK,OK,Below Average,TRUE
+6814039,10772,10772,TRUE,68729,Cardiff High School,Comprehensive School,1056,1.48,1057.6,1.57,1122.51,2.03,1.69,Above Average,,OK,OK,Above Average,TRUE
+6814042,10777,10777,TRUE,68722,Fitzalan High School,Comprehensive School,695.2,-0.87,657.9,-1.11,625.83,-1.56,-1.18,Below Average,,OK,OK,Below Average,TRUE
+6814049,10771,10771,TRUE,68718,Cantonian High School,Comprehensive School,664.3,-1.07,641.9,-1.21,683.16,-1.15,-1.14,Below Average,,OK,OK,Below Average,TRUE
+6814051,14541,14541,TRUE,68736,Llanishen High School,Comprehensive School,932.5,0.68,947.4,0.83,868.06,0.19,0.57,Above Average,,OK,OK,Above Average,TRUE
+6814054,10774,10774,TRUE,68720,Cathays High School,Comprehensive School,588.5,-1.56,356,-3.13,427.66,-3,-2.56,Below Average,,Big Change,OK,Below Average,TRUE
+6814070,14576,14576,TRUE,68742,Radyr Comprehensive School,Comprehensive School,1059.9,1.51,1013.6,1.27,1055.51,1.54,1.44,Above Average,,OK,OK,Above Average,TRUE
+6814071,10904,10904,TRUE,68724,Ysgol Gyfun Gymraeg Glantaf,Comprehensive School,806.4,-0.14,762.5,-0.41,785.78,-0.41,-0.32,Below Average,,OK,OK,Below Average,TRUE
+6814072,17244,17244,TRUE,68796,Ysgol Gyfun Gymraeg Plasmawr,Comprehensive School,978.2,0.98,926.4,0.69,1036.02,1.4,1.02,Above Average,,OK,OK,Above Average,TRUE
+6814073,19147,19147,TRUE,68723,Michaelston Community College,Comprehensive School,252.3,-3.75,421.6,-2.69,497.26,-2.49,-2.98,Below Average,,Big Change,OK,Below Average,TRUE
+6814608,15312,15312,TRUE,68717,The Bishop Of Llandaff C.I.W. High School,Comprehensive School,1079,1.63,1076.6,1.7,1027.76,1.34,1.56,Above Average,,OK,OK,Above Average,TRUE
+6814609,14809,14809,TRUE,68747,St Teilo's C.I.W. High School,Comprehensive School,918.5,0.59,783.9,-0.26,787.98,-0.39,-0.02,Below Average,,OK,OK,Below Average,TRUE
+6815403,10790,10790,TRUE,68751,Whitchurch High School,Comprehensive School,1009.1,1.18,1099.9,1.85,1012.66,1.23,1.42,Above Average,,OK,OK,Above Average,TRUE
+6816004,16847,16847,TRUE,68741,St Johns College,Independent School,959,0.85,910.5,0.58,918.88,0.56,0.66,Above Average,,OK,OK,Above Average,TRUE
+6816024,10780,10780,TRUE,68731,Howell's School,Independent School,843.7,0.1,862.8,0.27,869.46,0.2,0.19,Above Average,,OK,OK,Above Average,TRUE
+6665500,12325,12325,TRUE,68650,Ysgol Bro Hyddgen,Comprehensive School,1049.7,1.44,916.1,0.62,929.62,0.63,0.9,Above Average,Data for 2013 and 2014 taken from Ysgol Bro Ddyfi,OK,OK,Above Average,TRUE
+6675501,19615,#N/A,#N/A,Not Known,Ysgol Henry Richard School,Comprehensive School,696.1,-0.86,690.6,-0.89,No Data,No Data,-0.87,Below Average,Opened in 2014,OK,No Data,#N/A,#N/A
+6724085,27261,27261,TRUE,68591,Ysgol Gyfun Gymraeg Llangynwyd,Comprehensive School,No data,No data,966.4,0.96,1065.09,1.61,1.29,Above Average,Opened in 2008 but only got data for 2014,No Data,OK,Above Average,TRUE
+6744106,19300,19300,TRUE,68505,Aberdare Community School,Comprehensive School,611.3,-1.41,655.2,-1.13,889.37,0.34,-0.73,Below Average,Opened in 2014,OK,Big Change,Below Average,TRUE
+6816012,19036,19036,TRUE,68763,The Cathedral School,Independent School,No data,No data,892.7,0.46,892.11,0.36,0.41,Above Average,,No Data,OK,Above Average,TRUE
+6694064,19120,19120,TRUE,68229  ,Ysgol Maes y Gwendraeth,Comprehensive School,820.8,-0.05,927.4,0.70,844.27,0.02,0.02,Above Average,New School,No Data,No Data,Above Average,TRUE
+6784076,19527,19527,TRUE,Not Known,Cwmbran High,Comprehensive School,883.9,0.36,682.5,-0.94,785.26,-0.41,-0.33,Below Average,New school,Big Change,OK,Below Average,TRUE
+,,,,,,,2014 Average,,2015 Average,,2016 Average,,,,,,,,
+,,,,,,,828.2,,823.3,,842,,,,,,,,
+,,,,,,,2014 SD,,2015 SD,,2016 SD,,,,,,,,
+,,,,,,,153.8,,149.4,,138.3,,,,,,,,
