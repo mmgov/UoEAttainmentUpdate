@@ -1,9 +1,7 @@
+# Lee's version
 
 # Packages ----------------------------------------------------------------
-
-library ("tidyverse")
-
-getwd
+library("tidyverse")
 
 # Import new data -------------------------------------------------------------
 
@@ -13,19 +11,15 @@ NWALevel <- read_csv("Raw Data/Wales/A Level/WalesAlevelRImport.csv", na=c('*','
 
 # combine LEA and Establishment code
 
-NWALevel<-unite(NWALevel,DfENum,"LA Code","Estab Code", sep = "")
+NWALevel <- unite(NWALevel,DfENum,"LA Code","Estab Code", sep = "")
 
 # rename "establishment name" from the new data to "School name" to match old dataset
 
-colnames(NWALevel)[colnames(NWALevel)=="Estab Name"] <- "School Name"
+colnames(NWALevel)[colnames(NWALevel) == "Estab Name"] <- "School Name"
 
 # rename Average wider points score into "Raw Score" so that we can use the same name across all 7 datasets
 
-colnames(NWALevel)[colnames(NWALevel)=="Average wider points score for pupils aged 17"] <- "RawScore2017"
-
-
-
-
+colnames(NWALevel)[colnames(NWALevel) == "Average wider points score for pupils aged 17"] <- "RawScore2017"
 
 # import older data 2014 to 2016
 
@@ -33,29 +27,28 @@ OWALevel <- read_csv("Raw Data/Wales/A Level/WalesALevel2014-2016SS.csv", na=c('
 
 # rename "EUCLID DfE Number" to "DfENum"
 
-colnames(OWALevel)[colnames(OWALevel)=="EUCLID DfE Number"] <- "DfENum"
+colnames(OWALevel)[colnames(OWALevel) == "EUCLID DfE Number"] <- "DfENum"
 
 # rename Average wider points score into "Raw Score" so that we can use the same name across all 7 datasets
 
-colnames(OWALevel)[colnames(OWALevel)=="Average wider points score for pupils aged 17 2015"] <- "RawScore2015"
+colnames(OWALevel)[colnames(OWALevel) == "Average wider points score for pupils aged 17 2015"] <- "RawScore2015"
 
-colnames(OWALevel)[colnames(OWALevel)=="Average wider points score for pupils aged 17 2016"] <- "RawScore2016"
-
+colnames(OWALevel)[colnames(OWALevel) == "Average wider points score for pupils aged 17 2016"] <- "RawScore2016"
 
 # chanage class of DfENum,Euclid School Code, Euclid National centre number to character
 
-class(OWALevel$DfENum) = "character"
-class(OWALevel$`EUCLID School Code`) = "character"
-class(OWALevel$`EUCLID National Centre Number`) = "character"
-class(OWALevel$`RawScore2015`) = "numeric"
-class(OWALevel$`Z score 2015`) = "numeric"
-class(OWALevel$`RawScore2016`) = "numeric"
-class(OWALevel$`Z Score 2016`) = "numeric"
-
+class(OWALevel$DfENum) <- "character"
+class(OWALevel$`EUCLID School Code`) <- "character"
+class(OWALevel$`EUCLID National Centre Number`) <- "character"
+class(OWALevel$`RawScore2015`) <- "numeric"
+class(OWALevel$`Z score 2015`) <- "numeric"
+class(OWALevel$`RawScore2016`) <- "numeric"
+class(OWALevel$`Z Score 2016`) <- "numeric"
 
 #Remove end rows of Average and SD as these could just be vectors and not part of the "sheet"
 
-OWALevel<-OWALevel %>% slice(1:162)
+OWALevel<- OWALevel %>%
+  slice(1:162)
 
 #remove columns you don't need
 
@@ -67,15 +60,10 @@ OWALevel$`Upload double check`= NULL
 OWALevel$`Change check 2014-15`= NULL
 OWALevel$`Change check 2015-16`= NULL
 
-
 # Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
-
-
 
 # Indentify new schools ---------------------------------------------------
 # Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
-
-
 
 #This code makes a list of the DfE Numbers which are in the new data but NOT in the old data 
 
@@ -101,9 +89,6 @@ View(newsch)
 
 OWALevel <- bind_rows(OWALevel,newsch)
 
-
-
-
 #Add school type of new schools
 
 OWALevel <- OWALevel %>% 
@@ -115,14 +100,12 @@ OWALevel <- OWALevel %>%
 
 #Add school code of new schools
 
-
 OWALevel <- OWALevel %>% 
   mutate(`EUCLID School Code`= case_when(
     DfENum == 6675502 ~ '19611',  
     DfENum == 6644021 ~ '15821',
     TRUE ~ `EUCLID School Code`
   ))
-
 
 #Add national centre number of new schools
 
@@ -133,16 +116,10 @@ OWALevel <- OWALevel %>%
     TRUE ~ `EUCLID National Centre Number`
   ))
 
-
-
-
-
-
 # Now import any notes added from the  to the CSV file
 
 library(readr)
 NWALevelnotinoldnotes<- read_csv("NWALevelnotinold.csv")
-
 
 # now update existing dataset with new notes
 
@@ -153,11 +130,7 @@ test <- merge(OWALevel,
 
 # What happens with test at the moment is that an additional notes coloum is added. I would like it to overwrite the existing notes coloum , but keep existing information in cells where they has been no change 
 
-
-
 # Merge Old and New data --------------------------------------------------
-
-
 
 # merge new data into the older data, joining on DfENum  Add latest year of data to “A Level Data Wales 2015-2017”
 
@@ -168,19 +141,15 @@ WALevel2014to2017<-merge(OWALevel,
 
 # all.x = TRUE makes it a left join where all the existing field remain and if they don't appear in the new data an NA is returned.
 
-
 #Rename 2015 Z column
 
 colnames(WALevel2014to2017)[colnames(WALevel2014to2017)=="Z score 2015"] <-"Z Score 2015"
-
 
 #Rearrange columns  
 
 WALevel2014to2017<-WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
 
-
 # At this point make a subset of all the schools who are in the existing data but not in the new data, so they can be then be checked on the internet 
-
 
 schnonew <- WALevel2014to2017[is.na(WALevel2014to2017$RawScore2017),]
 
@@ -190,7 +159,7 @@ write.csv(schnonew, file = "WAlevelOldSchoolsNoNewData.csv")
 
 #Import this updated sheet so the notes can be appended
   
-  library(readr)
+  
 Wschnonewnotes<- read_csv("WAlevelOldSchoolsNoNewData.csv")
 
 # now update existing dataset with new notes
