@@ -118,7 +118,6 @@ OWALevel <- OWALevel %>%
 
 # Now import any notes added from the  to the CSV file
 
-library(readr)
 NWALevelnotinoldnotes<- read_csv("NWALevelnotinold.csv")
 
 # now update existing dataset with new notes
@@ -171,7 +170,6 @@ test <- merge(NIALevel2014to2017,
 
 # What happens with "test" at the moment is that an addittional notes coloum is added. I would like it to overwrite the existing notes coloum , but keep existing information in cells where they has been no change 
 
-
 # Remove schools with 3 years of no data ----------------------------------
 
 # Now remove schools with 3 years of no data. The below code actually retains only those schools have have data in each of the three years, not what we want!
@@ -196,17 +194,14 @@ WALevel2014to2017 <- WALevel2014to2017[WALevel2014to2017$DfENum  %in% removethre
 
 #Now we a DF with 160 schools, no schools with three years of no data remain. 
 
-
-
 # Z Score -----------------------------------------------------------------
-
 
 # R has a function called scale which calculates Z score, however  
 
-
 WALevel2014to2017 <- WALevel2014to2017 %>% 
-  mutate(`Z Score 2017`= (scale(WALevel2014to2017$`Average wider points score for pupils aged 17 2017`,center=TRUE,scale=TRUE)))
-
+  mutate(`Z Score 2017`= (scale(WALevel2014to2017$`Average wider points score for pupils aged 17 2017`,
+                                center=TRUE,
+                                scale=TRUE)))
 
 # the funcion "scale" can be used for Z scores but then it turns the result into a "matrix" which can't be averaged with the other Z scores from 2015 and 2016. Also scale assumes you are using a sample and so calculates the sample SD. We have the population (as in our dataset contains all the schools we are interested in, and not just a sample of all the schools we are interested). Using sample SD means that the resulting Z score is just a little bit wrong (by 0.01 usually) For both these reasons I'm calculating the Z score by formula.
 
@@ -217,7 +212,6 @@ x <-x[!is.na(x)]
 mu <- mean(x,trim = 0)
 totalvar <- sum((x-mu)^2)
 pop_sd <- sqrt(totalvar/length(x))
-
 
 #Now calculate Z score using population SD
 
@@ -233,7 +227,6 @@ WALevel2014to2017 <- WALevel2014to2017 %>%
 
 WALevel2014to2017<-WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,12,16,13,14,15)]
 
-
 # Recalculate Z scores for earlier years in case of mergers
 #First 2016
 #First calculate population standard deviation
@@ -243,7 +236,6 @@ x <-x[!is.na(x)]
 mu <- mean(x,trim = 0)
 totalvar <- sum((x-mu)^2)
 pop_sd <- sqrt(totalvar/length(x))
-
 
 #Now calculate Z score using population SD
 
@@ -282,30 +274,21 @@ WALevel2014to2017 <- WALevel2014to2017 %>%
   mutate (`Average Z Score 2015-2017` = rowMeans(WALevel2014to2017[,c(9,11,13)], na.rm = TRUE))
 
 #round to 2 decimal places
-
-
 WALevel2014to2017 <- WALevel2014to2017 %>% 
   mutate(`Average Z Score 2015-2017`= round(WALevel2014to2017$`Average Z Score 2015-2017`,digits=2))
-
 
 # Expore to CSV so results can be compared to those already calculated in Excel
 write.csv(WALevel2014to2017, file = "WCheck.csv")
 
-
 # as R is rounding based on the three Z scores being to two decimal places. 14 out of the 160 schools come out as having a different three year average to . The difference is only by 0.01 each but this should be made consistent. The Z scores in Excel should be rounded to 2 decimal places. 
 
-
 # Assign above below average value ----------------------------------------
-
 
 WALevel2014to2017$`Above or Below Average new` <- NA
 WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Score 2015-2017`<=0] <- "BELOW AVERAGE"
 WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Score 2015-2017`>0] <- "ABOVE AVERAGE"
 
-
-
 # Validation --------------------------------------------------------------
-
 
 # Validate data 1) Validate Average, SD and Z score for each year by calculating the figures again another way 2) Volatility check, did the Z score change more than 2 (in either direction) between 2015 and 2016 or between 2016 and 2017?
 
@@ -325,7 +308,6 @@ totalvar <- sum((x-mu)^2)
 pop_sd <- sqrt(totalvar/length(x))
 
 sd.p(x)==pop_sd
-
 
 # Validate 2015 Z scores
 
@@ -349,7 +331,6 @@ scores<-zscore(x,robust=TRUE)
 # could try another way of making a z score?
 
 # volitility check
-
 
 # First 2015-2016
 WALevel2014to2017 <- WALevel2014to2017 %>% 
@@ -378,11 +359,9 @@ WALevel2014to2017$`1617bi`[WALevel2014to2017$`Change check 2016-17`>2] <- "Big C
 
 greaterthantwo1617 <- subset (WALevel2014to2017,`Change check 2016-17`>2)
 
-
 # Remove columns no longer needed -----------------------------------------
 
 WALevel2014to2017$`Average wider points score for pupils aged 17 2014`=NULL
 WALevel2014to2017$`Z score 2014`=NULL
 WALevel2014to2017$`Average Z score 2014-2016`=NULL
 WALevel2014to2017$`Above or Below Average`=NULL
-
