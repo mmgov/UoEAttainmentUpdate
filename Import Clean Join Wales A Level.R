@@ -3,37 +3,31 @@
 # Packages ----------------------------------------------------------------
 library("tidyverse")
 
-# Import new data -------------------------------------------------------------
+# Data --------------------------------------------------------------------
 
 # import new raw data 2017  "Beginning with the most recent data"
 
-NWALevel <- read_csv("Raw Data/Wales/A Level/WalesAlevelRImport.csv", na=c('*','','na'))
-
-# combine LEA and Establishment code
-
-NWALevel <- unite(NWALevel,DfENum,"LA Code","Estab Code", sep = "")
-
-# rename "establishment name" from the new data to "School name" to match old dataset
-
-colnames(NWALevel)[colnames(NWALevel) == "Estab Name"] <- "School Name"
-
-# rename Average wider points score into "Raw Score" so that we can use the same name across all 7 datasets
-
-colnames(NWALevel)[colnames(NWALevel) == "Average wider points score for pupils aged 17"] <- "RawScore2017"
+NWALevel <- read_csv("Raw Data/Wales/A Level/WalesAlevelRImport.csv",
+                     na = c('*','','na')) %>% 
+  unite(DfENum,"LA Code","Estab Code", sep = "") %>% 
+  rename(`School Name` = `Estab Name`,
+         RawScore2017 = `Average wider points score for pupils aged 17`)
 
 # import older data 2014 to 2016
 
-OWALevel <- read_csv("Raw Data/Wales/A Level/WalesALevel2014-2016SS.csv", na=c('*','','na'))
-
-# rename "EUCLID DfE Number" to "DfENum"
-
-colnames(OWALevel)[colnames(OWALevel) == "EUCLID DfE Number"] <- "DfENum"
-
-# rename Average wider points score into "Raw Score" so that we can use the same name across all 7 datasets
-
-colnames(OWALevel)[colnames(OWALevel) == "Average wider points score for pupils aged 17 2015"] <- "RawScore2015"
-
-colnames(OWALevel)[colnames(OWALevel) == "Average wider points score for pupils aged 17 2016"] <- "RawScore2016"
+OWALevel <- read_csv("Raw Data/Wales/A Level/WalesALevel2014-2016SS.csv",
+                     na = c('*','','na')) %>% 
+  rename(DfENum = `EUCLID DfE Number`,
+         RawScore2015 = `Average wider points score for pupils aged 17 2015`,
+         RawScore2016 = `Average wider points score for pupils aged 17 2016`) %>% 
+  select(-`match on school code`,
+         -`school code same in both sheets`,
+         -`Upload check`,
+         -X21,
+         -`Upload double check`,
+         -`Change check 2014-15`,
+         -`Change check 2015-16`) %>% 
+  slice(1:162)
 
 # chanage class of DfENum,Euclid School Code, Euclid National centre number to character
 
@@ -45,27 +39,9 @@ class(OWALevel$`Z score 2015`) <- "numeric"
 class(OWALevel$`RawScore2016`) <- "numeric"
 class(OWALevel$`Z Score 2016`) <- "numeric"
 
-#Remove end rows of Average and SD as these could just be vectors and not part of the "sheet"
-
-OWALevel<- OWALevel %>%
-  slice(1:162)
-
-#remove columns you don't need
-
-OWALevel$`match on school code`= NULL
-OWALevel$`school code same in both sheets`= NULL
-OWALevel$`Upload check`= NULL
-OWALevel$X21= NULL
-OWALevel$`Upload double check`= NULL
-OWALevel$`Change check 2014-15`= NULL
-OWALevel$`Change check 2015-16`= NULL
-
-# Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
-
 # Indentify new schools ---------------------------------------------------
 # Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
-
-#This code makes a list of the DfE Numbers which are in the new data but NOT in the old data 
+# This code makes a list of the DfE Numbers which are in the new data but NOT in the old data 
 
 missingfromnew <- setdiff(NWALevel$DfENum,OWALevel$DfENum)
 
