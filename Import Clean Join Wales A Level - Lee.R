@@ -74,18 +74,6 @@ OWALevel <- bind_rows(OWALevel, newsch) %>%
     TRUE ~ `EUCLID National Centre Number`
   ))
 
-# Now import any notes added from the  to the CSV file
-
-NWALevelnotinoldnotes <- read_csv("Raw Data/NWALevelnotinold.csv")
-
-# now update existing dataset with new notes
-
-test <- merge(OWALevel,
-              NWALevelnotinoldnotes[,c("DfENum", "Notes")],
-              by= "DfENum", all.x = TRUE) 
-
-# What happens with test at the moment is that an additional notes coloum is added. I would like it to overwrite the existing notes coloum , but keep existing information in cells where they has been no change 
-
 # Merge Old and New data --------------------------------------------------
 
 # merge new data into the older data, joining on DfENum  Add latest year of data to “A Level Data Wales 2015-2017”
