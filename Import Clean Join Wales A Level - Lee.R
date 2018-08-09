@@ -179,7 +179,9 @@ WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Scor
 
 # Validation --------------------------------------------------------------
 
-# Validate data1) Validate Average, SD and Z score for each year by calculating the figures again another way 2) Volatility check, did the Z score change more than 2 (in either direction) between 2015 and 2016 or between 2016 and 2017?
+# Validate data
+# 1) Validate Average, SD and Z score for each year by calculating the figures again another way
+# 2) Volatility check, did the Z score change more than 2 (in either direction) between 2015 and 2016 or between 2016 and 2017?
 
 #Validate 2015 mean & SD
 x <- WALevel2014to2017$`RawScore2015`
