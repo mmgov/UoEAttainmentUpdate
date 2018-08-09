@@ -76,39 +76,12 @@ OWALevel <- bind_rows(OWALevel, newsch) %>%
 
 # Merge Old and New data --------------------------------------------------
 
-# merge new data into the older data, joining on DfENum  Add latest year of data to “A Level Data Wales 2015-2017”
-
-WALevel2014to2017 <- merge(OWALevel,
-                           NWALevel[,c("DfENum","RawScore2017")],
-                           by = "DfENum", all.x = TRUE) %>% 
-  rename(`Z Score 2015` = `Z score 2015`)
-
-# all.x = TRUE makes it a left join where all the existing field remain and if they don't appear in the new data an NA is returned.
-
-#Rearrange columns  
-
+WALevel2014to2017 <- OWALevel %>% 
+  left_join(select(NWALevel, DfENum, RawScore2017),
+            by = 'DfENum')
+  
+# Rearrange columns  
 WALevel2014to2017 <- WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
-
-# At this point make a subset of all the schools who are in the existing data but not in the new data, so they can be then be checked on the internet 
-
-schnonew <- WALevel2014to2017[is.na(WALevel2014to2017$RawScore2017),]
-
-write.csv(schnonew, file = "WAlevelOldSchoolsNoNewData.csv")
-
-# After each school is reviewed, add notes to each one 
-
-#Import this updated sheet so the notes can be appended
-
-Wschnonewnotes <- read_csv("WAlevelOldSchoolsNoNewData.csv")
-
-# now update existing dataset with new notes
-
-test <- merge(NIALevel2014to2017,
-                           NIschnonewnotes[,c("DfENum",
-                                       "Notes")],
-                           by= "DfENum", all.x = TRUE) 
-
-# What happens with "test" at the moment is that an addittional notes coloum is added. I would like it to overwrite the existing notes coloum , but keep existing information in cells where they has been no change 
 
 # Remove schools with 3 years of no data ----------------------------------
 
