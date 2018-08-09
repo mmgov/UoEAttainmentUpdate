@@ -65,27 +65,19 @@ View(newsch)
 
 OWALevel <- bind_rows(OWALevel,newsch)
 
-#Add school type of new schools
+#Add school type and code of new schools and national centre type
 
 OWALevel <- OWALevel %>% 
   mutate(`School type`= case_when(
     DfENum == 6675502 ~ 'Comprehensive School',  
     DfENum == 6644021 ~ 'Comprehensive School',
     TRUE ~ `School type`
-  ))rm
-
-#Add school code of new schools
-
-OWALevel <- OWALevel %>% 
+  )) %>% 
   mutate(`EUCLID School Code`= case_when(
     DfENum == 6675502 ~ '19611',  
     DfENum == 6644021 ~ '15821',
     TRUE ~ `EUCLID School Code`
-  ))
-
-#Add national centre number of new schools
-
-OWALevel <- OWALevel %>% 
+  )) %>% 
   mutate(`EUCLID National Centre Number`= case_when(
     DfENum == 6675502 ~ '68251',
     DfENum == 6644021 ~ '68122',
@@ -94,7 +86,7 @@ OWALevel <- OWALevel %>%
 
 # Now import any notes added from the  to the CSV file
 
-NWALevelnotinoldnotes<- read_csv("NWALevelnotinold.csv")
+NWALevelnotinoldnotes <- read_csv("NWALevelnotinold.csv")
 
 # now update existing dataset with new notes
 
@@ -109,20 +101,16 @@ test <- merge(OWALevel,
 
 # merge new data into the older data, joining on DfENum  Add latest year of data to “A Level Data Wales 2015-2017”
 
-WALevel2014to2017<-merge(OWALevel,
-                         NWALevel[,c("DfENum",
-                                     "RawScore2017")],
-                         by= "DfENum", all.x = TRUE) 
+WALevel2014to2017 <- merge(OWALevel,
+                           NWALevel[,c("DfENum","RawScore2017")],
+                           by = "DfENum", all.x = TRUE) %>% 
+  rename(`Z Score 2015` = `Z score 2015`)
 
 # all.x = TRUE makes it a left join where all the existing field remain and if they don't appear in the new data an NA is returned.
 
-#Rename 2015 Z column
-
-colnames(WALevel2014to2017)[colnames(WALevel2014to2017)=="Z score 2015"] <-"Z Score 2015"
-
 #Rearrange columns  
 
-WALevel2014to2017<-WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
+WALevel2014to2017 <- WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
 
 # At this point make a subset of all the schools who are in the existing data but not in the new data, so they can be then be checked on the internet 
 
@@ -133,9 +121,8 @@ write.csv(schnonew, file = "WAlevelOldSchoolsNoNewData.csv")
 # After each school is reviewed, add notes to each one 
 
 #Import this updated sheet so the notes can be appended
-  
-  
-Wschnonewnotes<- read_csv("WAlevelOldSchoolsNoNewData.csv")
+
+Wschnonewnotes <- read_csv("WAlevelOldSchoolsNoNewData.csv")
 
 # now update existing dataset with new notes
 
@@ -151,14 +138,14 @@ test <- merge(NIALevel2014to2017,
 # Now remove schools with 3 years of no data. The below code actually retains only those schools have have data in each of the three years, not what we want!
 
 WALevel2014to2017New <- WALevel2014to2017 %>% 
-  filter( !is.na(`RawScore2015`)&
-            !is.na(`RawScore2016`) &
-            !is.na(`RawScore2017`))
+  filter(!is.na(`RawScore2015`) &
+           !is.na(`RawScore2016`) &
+           !is.na(`RawScore2017`))
 
 #However this code below creats a DF which only contains the schools which don't have data in each of the three years.
 
 WALevel2014to2017NoData <- WALevel2014to2017 %>% 
-  filter(is.na(`RawScore2015`)&
+  filter(is.na(`RawScore2015`) &
             is.na(`RawScore2016`) &
             is.na(`RawScore2017`))
 
