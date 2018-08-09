@@ -87,25 +87,8 @@ WALevel2014to2017 <- WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
 
 # Now remove schools with 3 years of no data. The below code actually retains only those schools have have data in each of the three years, not what we want!
 
-WALevel2014to2017_New <- WALevel2014to2017 %>% 
-  filter(!is.na(`RawScore2015`),
-         !is.na(`RawScore2016`),
-         !is.na(`RawScore2017`))
-
-#However this code below creats a DF which only contains the schools which don't have data in each of the three years.
-
-WALevel2014to2017_No_Data <- WALevel2014to2017 %>% 
-  filter(is.na(`RawScore2015`) &
-            is.na(`RawScore2016`) &
-            is.na(`RawScore2017`))
-
-#This can then be used remove the schools from the main dataset
-
-removethreeyearsnodata <- setdiff(WALevel2014to2017$DfENum, WALevel2014to2017NoData$DfENum)
-
-WALevel2014to2017 <- WALevel2014to2017[WALevel2014to2017$DfENum %in% removethreeyearsnodata, ]
-
-#Now we a DF with 160 schools, no schools with three years of no data remain. 
+WALevel2014to2017 <- WALevel2014to2017 %>% 
+  filter(!is.na(`RawScore2015`) | !is.na(`RawScore2016`) | !is.na(`RawScore2017`))
 
 # Z Score -----------------------------------------------------------------
 
@@ -116,7 +99,8 @@ WALevel2014to2017 <- WALevel2014to2017 %>%
                                 center=TRUE,
                                 scale=TRUE)))
 
-# the funcion "scale" can be used for Z scores but then it turns the result into a "matrix" which can't be averaged with the other Z scores from 2015 and 2016. Also scale assumes you are using a sample and so calculates the sample SD. We have the population (as in our dataset contains all the schools we are interested in, and not just a sample of all the schools we are interested). Using sample SD means that the resulting Z score is just a little bit wrong (by 0.01 usually) For both these reasons I'm calculating the Z score by formula.
+# the funcion "scale" can be used for Z scores but then it turns the result into a "matrix" which can't be averaged with the other Z scores from 2015 and 2016.
+# Also scale assumes you are using a sample and so calculates the sample SD. We have the population (as in our dataset contains all the schools we are interested in, and not just a sample of all the schools we are interested). Using sample SD means that the resulting Z score is just a little bit wrong (by 0.01 usually) For both these reasons I'm calculating the Z score by formula.
 
 #First calculate population standard deviation
 
@@ -203,7 +187,7 @@ WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Scor
 
 # Validation --------------------------------------------------------------
 
-# Validate data 1) Validate Average, SD and Z score for each year by calculating the figures again another way 2) Volatility check, did the Z score change more than 2 (in either direction) between 2015 and 2016 or between 2016 and 2017?
+# Validate data1) Validate Average, SD and Z score for each year by calculating the figures again another way 2) Volatility check, did the Z score change more than 2 (in either direction) between 2015 and 2016 or between 2016 and 2017?
 
 #Validate 2015 mean & SD
 x <- WALevel2014to2017$`RawScore2015`
