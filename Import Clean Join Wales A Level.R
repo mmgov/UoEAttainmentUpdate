@@ -111,7 +111,7 @@ OWALevel <- OWALevel %>%
     DfENum == 6675502 ~ 'Comprehensive School',  
     DfENum == 6644021 ~ 'Comprehensive School',
     TRUE ~ `School type`
-  ))rm
+  ))
 
 #Add school code of new schools
 
