@@ -16,28 +16,24 @@ NWALevel <- read_csv("Raw Data/Wales/A Level/WalesAlevelRImport.csv",
 # import older data 2014 to 2016
 
 OWALevel <- read_csv("Raw Data/Wales/A Level/WalesALevel2014-2016SS.csv",
-                     na = c('*','','na')) %>% 
+                     na = c('*','','na', 'No Data', 'No data', 'DC')
+) %>% 
   rename(DfENum = `EUCLID DfE Number`,
          RawScore2015 = `Average wider points score for pupils aged 17 2015`,
          RawScore2016 = `Average wider points score for pupils aged 17 2016`) %>% 
   select(-`match on school code`,
          -`school code same in both sheets`,
          -`Upload check`,
-         -X21,
          -`Upload double check`,
          -`Change check 2014-15`,
          -`Change check 2015-16`) %>% 
-  slice(1:162)
-
-# chanage class of DfENum,Euclid School Code, Euclid National centre number to character
-
-class(OWALevel$DfENum) <- "character"
-class(OWALevel$`EUCLID School Code`) <- "character"
-class(OWALevel$`EUCLID National Centre Number`) <- "character"
-class(OWALevel$`RawScore2015`) <- "numeric"
-class(OWALevel$`Z score 2015`) <- "numeric"
-class(OWALevel$`RawScore2016`) <- "numeric"
-class(OWALevel$`Z Score 2016`) <- "numeric"
+  slice(1:162) %>% 
+  mutate(DfENum = as.character(DfENum),
+         `EUCLID School Code` = as.character(`EUCLID School Code`),
+         `Average wider points score for pupils aged 17 2014` = as.numeric(`Average wider points score for pupils aged 17 2014`),
+         `RawScore2015` = as.double(`RawScore2015`),
+         `RawScore2016` = as.double(`RawScore2016`)
+  )
 
 # Indentify new schools ---------------------------------------------------
 # Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
