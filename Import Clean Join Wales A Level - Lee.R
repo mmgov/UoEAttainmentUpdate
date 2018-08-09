@@ -36,34 +36,28 @@ OWALevel <- read_csv("Raw Data/Wales/A Level/WalesALevel2014-2016SS.csv",
   )
 
 # Indentify new schools ---------------------------------------------------
-# Now we indentify schools which are present in the new data but not in the old data, so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
+
+# Now we indentify schools which are present in the new data but not in the old data.
+# This is so that they can be looked up online and a decision made on whether they should be included in the dataset (because they are new schools) or not included (as they are Pupil Referal Units or Special Schools)
 # This code makes a list of the DfE Numbers which are in the new data but NOT in the old data 
+# This code makes a new dataframe subsetting on the new data, including only those schools not in the new data
+# Then this dataframe can be exported into a csv so that me or an intern can web search each one and establish if it should be included in the dataset
 
 missingfromnew <- setdiff(NWALevel$DfENum,OWALevel$DfENum)
 
-#This code makes a new dataframe subsetting on the new data, including only those schools not in the new data
-
 NWALevelnotinold <- NWALevel[NWALevel$DfENum %in% missingfromnew, ]
 
-#Then this dataframe can be exported into a csv so that me or an intern can web search each one and establish if it should be included in the dataset
+write_csv(NWALevelnotinold, path = "Raw Data/NWALevelnotinold.csv")
 
-write.csv(NWALevelnotinold, file = "NWALevelnotinold.csv")
+# Add new schools to old data ---------------------------------------------
 
-# After web searching its been established that two schools from the new data need to be added to the new data 6675502 and 6644021. Create a data frame which only contains the two new schools DfE number  
+# After the new schools have been identified they can be added to the old data
 
 newsch <- NWALevel %>% 
   select(DfENum,`School Name`) %>%
   filter(DfENum %in% c(6675502,6644021))
 
-View(newsch)
-
-# bind the two new schools into OWALevel, to prepare for copying the new 2017 data into the new dataset
-
-OWALevel <- bind_rows(OWALevel,newsch)
-
-#Add school type and code of new schools and national centre type
-
-OWALevel <- OWALevel %>% 
+OWALevel <- bind_rows(OWALevel, newsch) %>% 
   mutate(`School type`= case_when(
     DfENum == 6675502 ~ 'Comprehensive School',  
     DfENum == 6644021 ~ 'Comprehensive School',
@@ -82,13 +76,12 @@ OWALevel <- OWALevel %>%
 
 # Now import any notes added from the  to the CSV file
 
-NWALevelnotinoldnotes <- read_csv("NWALevelnotinold.csv")
+NWALevelnotinoldnotes <- read_csv("Raw Data/NWALevelnotinold.csv")
 
 # now update existing dataset with new notes
 
 test <- merge(OWALevel,
-              NWALevelnotinoldnotes[,c("DfENum",
-                                       "Notes")],
+              NWALevelnotinoldnotes[,c("DfENum", "Notes")],
               by= "DfENum", all.x = TRUE) 
 
 # What happens with test at the moment is that an additional notes coloum is added. I would like it to overwrite the existing notes coloum , but keep existing information in cells where they has been no change 
