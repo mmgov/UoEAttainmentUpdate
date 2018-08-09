@@ -87,23 +87,23 @@ WALevel2014to2017 <- WALevel2014to2017[c(1,2,3,4,5,6,7,8,9,10,11,15,12,13,14)]
 
 # Now remove schools with 3 years of no data. The below code actually retains only those schools have have data in each of the three years, not what we want!
 
-WALevel2014to2017New <- WALevel2014to2017 %>% 
-  filter(!is.na(`RawScore2015`) &
-           !is.na(`RawScore2016`) &
-           !is.na(`RawScore2017`))
+WALevel2014to2017_New <- WALevel2014to2017 %>% 
+  filter(!is.na(`RawScore2015`),
+         !is.na(`RawScore2016`),
+         !is.na(`RawScore2017`))
 
 #However this code below creats a DF which only contains the schools which don't have data in each of the three years.
 
-WALevel2014to2017NoData <- WALevel2014to2017 %>% 
+WALevel2014to2017_No_Data <- WALevel2014to2017 %>% 
   filter(is.na(`RawScore2015`) &
             is.na(`RawScore2016`) &
             is.na(`RawScore2017`))
 
 #This can then be used remove the schools from the main dataset
 
-removethreeyearsnodata <- setdiff(WALevel2014to2017$DfENum,WALevel2014to2017NoData$DfENum)
+removethreeyearsnodata <- setdiff(WALevel2014to2017$DfENum, WALevel2014to2017NoData$DfENum)
 
-WALevel2014to2017 <- WALevel2014to2017[WALevel2014to2017$DfENum  %in% removethreeyearsnodata, ]
+WALevel2014to2017 <- WALevel2014to2017[WALevel2014to2017$DfENum %in% removethreeyearsnodata, ]
 
 #Now we a DF with 160 schools, no schools with three years of no data remain. 
 
