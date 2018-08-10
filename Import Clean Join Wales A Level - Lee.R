@@ -173,9 +173,11 @@ write.csv(WALevel2014to2017, file = "WCheck.csv")
 
 # Assign above below average value ----------------------------------------
 
-WALevel2014to2017$`Above or Below Average new` <- NA
-WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Score 2015-2017`<=0] <- "BELOW AVERAGE"
-WALevel2014to2017$`Above or Below Average new`[WALevel2014to2017$`Average Z Score 2015-2017`>0] <- "ABOVE AVERAGE"
+WALevel2014to2017 <- WALevel2014to2017 %>% 
+  mutate(`Above or Below Average new` = case_when(
+    `Average Z Score 2015-2017` <= 0 ~ 'BELOW AVERAGE',
+    `Average Z Score 2015-2017` > 0 ~ 'ABOVE AVERAGE'
+  ))
 
 # Validation --------------------------------------------------------------
 
