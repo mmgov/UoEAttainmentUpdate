@@ -111,7 +111,7 @@ OWALevel <- OWALevel %>%
     DfENum == 6675502 ~ 'Comprehensive School',  
     DfENum == 6644021 ~ 'Comprehensive School',
     TRUE ~ `School type`
-  ))rm
+  ))
 
 #Add school code of new schools
 
@@ -416,4 +416,3 @@ WALevel2014to2017$`Average wider points score for pupils aged 17 2014`=NULL
 WALevel2014to2017$`Z score 2014`=NULL
 WALevel2014to2017$`Average Z score 2014-2016`=NULL
 WALevel2014to2017$`Above or Below Average`=NULL
-
